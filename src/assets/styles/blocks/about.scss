@@ -1,0 +1,53 @@
+.about{
+	display: flex;
+}
+.about__left, .about__right{
+	width: 50%;
+}
+.about__left{
+	background-color: $white;
+}
+.about__right{
+	background-color: $beige;
+}
+.about__triangle{
+	margin-top: -16px;
+}
+.triangle{
+	margin-top: -300px;
+	&_fill{
+		fill: #fff;
+		&_beige{
+			fill: $beige;
+		}
+		&_white{
+			fill: $white;
+		}
+	}
+}
+.user-description, .about__right-description, .about__right-content{
+	margin: 0 10%;
+}
+.user-description{
+	margin-bottom: 40px;
+}
+.user-description__text{
+	& > p{
+		margin: 10px 0;
+	}
+}
+.text-content{
+	& > p{
+		font-weight: 600;
+	}
+}
+.user-description__avatar{
+	display: block;
+	width: 430px;
+	height: 390px;
+	background: url(assets/images/content/avatar.png) center center no-repeat;
+	margin: 0 auto;
+}
+.about__left-title{
+	background: url(assets/images/decor/about_header.png) top center no-repeat;
+}

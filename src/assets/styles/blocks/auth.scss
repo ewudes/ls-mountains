@@ -1,0 +1,79 @@
+.auth-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: url(assets/images/bg/auth-bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+.auth-block__content{
+	background-color: $white;
+	width: 380px;
+	height: 375px;
+	border-radius: 5px;
+}
+.auth-block__btns{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 45px;
+	background: $green;
+	border-radius: 0 0 5px 5px;
+}
+.auth__btn{
+	width: 33.3%;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 700;
+	color: #fff;
+	height: 100%;
+	cursor: pointer;
+	border-right: 1px solid $beige;
+	&:last-child{
+		border:none;
+	}
+	&:hover{
+		background: #009688;
+	}
+}
+.auth-block__user{
+	height: 300px;
+}
+.auth-block__socials{
+	display: flex;
+	justify-content: center;
+}
+.auth__info{
+	opacity: .8;
+}
+.auth-login-btns{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 180px;
+	height: 45px;
+	border: 1px solid $white;
+	border-radius: 5px;
+	margin: 25px 20px 0 0;
+	cursor: pointer;
+	&:hover{
+		background: $white;
+	}
+}
+.login-btn{
+	color: $white;
+	text-align: center;
+	font-weight: 700;
+	line-height: 45px;
+	&:hover{
+		color: $grey;
+	}
+}
+.auth-footer{
+	position: absolute;
+	bottom: 0;
+	color: $white;
+	margin-bottom: 35px;
+}
