@@ -1,0 +1,17 @@
+.contacts{
+	&__item{
+		display: flex;
+		margin: 15px 40px;
+	}
+	&__icon-img{
+		width: 25px;
+		height: 25px;
+		fill: $green;
+		margin-right: 10px;
+	}
+	&__title{
+		font-style: normal;
+		@include roboto(medium);
+		opacity: .8;
+	}
+}

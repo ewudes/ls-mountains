@@ -1,0 +1,18 @@
+.map{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 970px;
+	background-image: url(assets/images/decor/Layer_15.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__data{
+		width: 370px;
+		min-height: 290px;
+		padding-bottom: 30px;
+		background-color: $white;
+		border-radius: 5px;
+	}
+}

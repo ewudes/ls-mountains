@@ -1,0 +1,86 @@
+.auth-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url(assets/images/bg/auth-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__content{
+		background-color: $white;
+		width: 380px;
+		height: 375px;
+		border-radius: 5px;
+	}
+	&__btns{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 45px;
+		background: $green;
+		border-radius: 0 0 5px 5px;
+	}
+	&__user{
+		height: 300px;
+	}
+	&__socials{
+		display: flex;
+		justify-content: center;
+		padding: 15px 0;
+	}
+}
+
+.auth{
+	&__btn{
+		width: 33.3%;
+		text-align: center;
+		line-height: 45px;
+		@include roboto(medium);
+		color: #fff;
+		height: 100%;
+		cursor: pointer;
+		border-right: 1px solid $beige;
+		&:last-child{
+			border:none;
+		}
+		&:hover{
+			background-color: #009688;
+			border-radius: 0 0 5px 5px;
+		}
+	}
+	&__info{
+		opacity: .8;
+	}
+}
+.auth-login-btns{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 180px;
+	height: 45px;
+	border: 1px solid $white;
+	border-radius: 5px;
+	margin: 25px 20px 0 0;
+	cursor: pointer;
+	&:hover{
+		background-color: $white;
+	}
+}
+.login-btn{
+	color: $white;
+	text-align: center;
+	@include roboto(medium);
+	line-height: 45px;
+	&:hover{
+		color: $grey;
+	}
+}
+.auth-footer{
+	position: absolute;
+	bottom: 0;
+	color: $white;
+	margin-bottom: 35px;
+}

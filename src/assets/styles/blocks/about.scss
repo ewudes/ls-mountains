@@ -1,0 +1,63 @@
+.about{
+	display: flex;
+	&__left, &__right{
+		width: 50%;
+	}
+	&__left{
+		background-color: $white;
+	}
+	&__left-title{
+		background-image: url(assets/images/decor/about_header.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+	&__left-content{
+		margin-bottom: 40px;
+	}
+	&__right{
+		background-color: $beige;
+	}
+	&__triangle{
+		position: relative;
+		bottom: 0;
+
+	}
+	&__right-description, &__right-content, .user-description{
+		margin: 0 10%;
+	}
+}
+.triangle{
+	position: absolute;
+	bottom: 0;
+	&_fill{
+		fill: #fff;
+		&_beige{
+			fill: $beige;
+		}
+		&_white{
+			fill: $white;
+		}
+	}
+}
+.user-description{
+	margin-bottom: 40px;
+	&__text {
+		& > p {
+			margin: 10px 0;
+		}
+	}
+	&__avatar{
+		display: block;
+		width: 430px;
+		height: 390px;
+		background-image: url(assets/images/content/avatar.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+	}
+}
+.text-content{
+	& > p{
+		@include roboto(bold);
+	}
+}
