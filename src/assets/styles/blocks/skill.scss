@@ -9,41 +9,43 @@
 	&:first-child{
 		margin-left: 0;
 	}
+	&__figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: rotate(-90deg);
+	}
+	&__circle {
+		fill: transparent;
+		stroke: #ccc;
+		stroke-width: 16px;
+	}
+	&__circle{
+		&_above {
+			stroke: $green;
+			stroke-dasharray: 302;
+			stroke-dashoffset: 124;
+		}
+	}
+	&__title{
+		width: 65px;
+		font-size: 12px;
+		line-height: 12px;
+		color: $green;
+		text-align: center;
+	}
 }
+.skills-row{
+	&__title{
+		font-size: 28px;
+		margin-top: 35px;
+	}
+	&__list{
+		display: flex;
+	}
 
-.skill__figure {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transform: rotate(-90deg);
-}
-
-.skill__circle {
-	fill: transparent;
-	stroke: #ccc;
-	stroke-width: 16px;
-}
-
-.skill__circle_above {
-	stroke: $green;
-	stroke-dasharray: 302;
-	stroke-dashoffset: 124;
-}
-.skills-row__title{
-	font-size: 28px;
-	margin-top: 35px;
-}
-.skills-row__list{
-	display: flex;
-}
-.skill__title{
-	width: 65px;
-	font-size: 12px;
-	line-height: 12px;
-	color: $green;
-	text-align: center;
 }
 .skills-list{
 	margin-top: 60px;

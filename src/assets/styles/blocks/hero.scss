@@ -2,8 +2,30 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 620px;
-	background: url(assets/images/bg/hero-bg.jpg) no-repeat;
+	background-image: url(assets/images/bg/hero-bg.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
+	&__links{
+		width: 50%;
+	}
+	&__menu{
+		width: 50%;
+	}
+	&__title{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__down-btns{
+		margin: 0 auto;
+	}
+	&__down-btn-pic {
+		display: block;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		opacity: .7;
+	}
 }
 .hero-row{
 	display: flex;
@@ -15,26 +37,17 @@
 		position: relative;
 	}
 }
-.hero__links{
-	width: 50%;
-}
-.hero__menu{
-	width: 50%;
-}
 .section-title{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(assets/images/decor/portfolio_header.png) center center no-repeat;
+	background-image: url(assets/images/decor/portfolio_header.png);
+	background-position: center center;
+	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
 }
 
 .section-title-pic{
 	width: 100%;
-}
-.hero__title{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }

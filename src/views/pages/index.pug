@@ -13,13 +13,16 @@ block content
 						.user__name Владимир Астахов
 						.user__info.auth__info Личный сайт разработчика
 				.auth-block__socials
-					-
-						var socials = [
-							['vk', '#'],
-							['gh', '#'],
-							['in', '#']
-						]
-					+socials(socials, 'socials_fill_green')
+					ul.socials
+						li.socials__link
+							a(class='socials__link', href='#')
+								+icon('vk','socials__link-pic socials__link-pic_auth socials__link-pic_vk')
+						li.socials__link
+							a(class='socials__link', href='#')
+								+icon('github','socials__link-pic socials__link-pic_auth socials__link-pic_gh')
+						li.socials__link
+							a(class='socials__link', href='#')
+								+icon('in','socials__link-pic socials__link-pic_auth socials__link-pic_in')
 			.auth-block__btns
 				.auth__btn Мои работы
 				.auth__btn Обо мне

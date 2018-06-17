@@ -1,10 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
-
 @font-face {
   font-family: 'bernier';
-  src: url('/assets/fonts/bernierregular-regular-webfont.woff') format('woff'), 
-  url('/assets/fonts/bernierregular-regular-webfont.woff2') format('woff2');
+  src: url('/assets/fonts/bernierregular/bernierregular-regular-webfont.woff') format('woff'),
+  url('/assets/fonts/bernierregular/bernierregular-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+@font-face {
+	font-family: 'roboto';
+	src: url('/assets/fonts/roboto/bold/roboto-bold-webfont.woff2') format('woff2'),
+	url('/assets/fonts/roboto/bold/roboto-bold-webfont.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('/assets/fonts/roboto/light/roboto-light-webfont.woff2') format('woff2'),
+	url('/assets/fonts/roboto/light/roboto-light-webfont.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('/assets/fonts/roboto/regular/roboto-regular-webfont.woff2') format('woff2'),
+	url('/assets/fonts/roboto/regular/roboto-regular-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('/assets/fonts/roboto/medium/roboto-medium-webfont.woff2') format('woff2'),
+	url('/assets/fonts/roboto/medium/roboto-medium-webfont.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@mixin bernier() {
+	font-family: 'bernier', Helvetica, sans-serif;
+}
+
+@mixin roboto($style: light) {
+	font-family: 'roboto', Helvetica, sans-serif;
+
+	@if $style == light {
+		font-weight: 300;
+	}
+
+	@if $style == regular {
+		font-weight: 400;
+	}
+
+	@if $style == medium {
+		font-weight: 500;
+	}
+
+	@if $style == bold {
+		font-weight: 600;
+	}
 }
