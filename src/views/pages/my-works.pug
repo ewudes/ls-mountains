@@ -32,7 +32,7 @@ block content
 					.user__pic
 						img.user__pic-img
 					.user__description
-						.user__name Владимир Астахов
+						.user__name Алексей Гунчин
 						.user__info Личный сайт разработчика
 		.hero-row
 			a(href="").down-btn.hero__down-btns
@@ -44,18 +44,60 @@ block content
 				polygon(points="0,80 0,100 100,100")
 				polygon(points="0,100 100,100 100,80")
 
-		h2.block-title Мои работы
-		.slider-wrapper
-			.slider
+		h2.block-title.works-title Мои работы
+		.slider-container
+			.slider__tech
+				.slider__descr
+					.block-subtitle Сайт школы онлайн образования
+					.slider__descr-stack Html, Css, Js
+					.slider__descr-link
+						a(href="#").slider__descr-link-view Посмотреть сайт
 
-		h2.block-title Что обо мне говорят
-		.reviews-wrapper
-			.reviews__show
-			.reviews__form
-			a(href="").down-btn.hero__down-btns
-				+icon('arrow_down','hero__down-btn-pic')
+			.slider__big-pic
+				+image('content/work-1.png', 'alt', 'slider__big-img')
+			.slider__btns
+				.slider__btn
+					.slider__btn-left
+						+image('content/work-2.png', 'alt', 'slider__btn-img')
+				.slider__btn.slider__btn_next
+					.slider__btn-right
+						+image('content/work-3.png', 'alt', 'slider__btn-img')
 
-	footer.footer
+		h2.block-title.review-titele Что обо мне говорят
+	section.review
+		.review-wrap
+			.review__row
+				.review__item
+					.review__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+					.review__descr
+						.review__descr-img
+							+image('content/Layer_8.jpg', 'photo', 'review__descr-pic')
+						.review__descr-lbl Ковальчук Дмитрий
+							span основатель LoftSchool
+
+				.review__item
+					.review__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+					.review__descr
+						.review__descr-img
+							+image('content/Layer_9.jpg', 'photo', 'review__descr-pic')
+						.review__descr-lbl Сабанцев Владимир
+							span преподаватель
+			.review__row
+				.review__form
+					.block-subtitle Связаться со мной
+					form.review-form
+						input(type="text", class="review-form__input", placeholder="Имя", required)
+						input(type="text", class="review-form__input", placeholder="Email", required)
+						textarea(type="text", class="review-form__textarea", placeholder="Ваше сообщение", required)
+						.review-form__btns
+							button(type="submit", class="review-form__btn") Отправить
+							button(type="reset", class="review-form__btn") Очистить
+			.review__row
+				.review__btn
+					a(href="").down-btn.hero__down-btns
+						+icon('arrow_down','hero__down-btn-pic')
+
+	footer.footer.footer-works
 		.footer__row
 			.footer__col
 				nav.menu

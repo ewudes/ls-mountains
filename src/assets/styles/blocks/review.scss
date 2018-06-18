@@ -1,0 +1,140 @@
+.review{
+	min-height: 1080px;
+	background-image: url(assets/images/bg/works-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.review-titele{
+	margin: 40px auto 0;
+	min-height: 200px;
+	max-width: 530px;
+	background-image: url(assets/images/decor/about_header.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.review-wrap{
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+}
+.review{
+	&__row{
+		display: flex;
+		justify-content: center;
+	}
+	&__descr{
+		display: flex;
+		margin-top: 30px;
+	}
+	&__descr-img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	&__descr-lbl{
+		display: flex;
+		flex-direction: column;
+		color: $green;
+		margin-left: 20px;
+		@include roboto(bold);
+		& > span{
+			@include roboto(regular);
+		}
+	}
+	&__item {
+		position: relative;
+		max-width: 380px;
+		margin: 0 20px;
+		&:before {
+			content: '';
+			background-image: svg-load('quote.svg' fill='#eeebdf');
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			bottom: 180px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+	&__btn {
+		margin: 100px auto 0;
+		transform: rotate(180deg);
+	}
+	&__form{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		background: inherit;
+		width: 380px;
+		height: 440px;
+		z-index: 10;
+		border-radius: 6px;
+		margin-top: 80px;
+		&:before{
+			background: inherit;
+			bottom: 0;
+			content: '';
+			filter: blur(4px);
+			background-image: url(assets/images/bg/works-bg.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}
+.review-form{
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	z-index: 20;
+	&__input, &__textarea{
+		margin: 10px 0;
+		border-radius: 6px;
+		border: 1px solid $beige;
+		padding: 15px 20px;
+		@include roboto(regular);
+		&::placeholder{
+			opacity: .5;
+		}
+	}
+	&__input{
+		height: 40px;
+	}
+	&__textarea{
+		height: 140px;
+		resize: none;
+	}
+	&__btns{
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	&__btn{
+		width: 50%;
+		height: 50px;
+		background-color: $green;
+		border-right: 1px solid $beige;
+		color: $white;
+		&:first-child{
+			border-radius: 0 0 0 6px;
+		}
+		&:last-child{
+			border: none;
+			border-radius: 0 0 6px 0;
+		}
+		&:hover{
+			background-color: $dark-green;
+		}
+	}
+}
