@@ -18,7 +18,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.26.7",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.7",
     "cssnano": "^4.0.0-rc.2",
@@ -29,7 +29,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.5.0",
     "file-loader": "^1.1.4",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-eslint": "^4.0.2",
@@ -59,7 +59,7 @@
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "2.5.13",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-stream": "^4.0.3"
   },
   "browserslist": [
