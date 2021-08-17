@@ -23,11 +23,14 @@
 		&_justify{
 			&_end{
 				justify-content: flex-end;
+				& > p{
+					text-align: right;
+				}
 			}
 		}
 	}
 }
-.footer-about{
+.footer-about, .footer-works{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -42,5 +45,8 @@
 	&__link{
 		color: #fff;
 		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 }

@@ -50,7 +50,10 @@ p {
 section {
 	width: 100%;
 }
+
 .block-title, .block-subtitle{
+	display: flex;
+	justify-content: center;
 	@include bernier();
 	text-align: center;
 	&:before{
@@ -71,4 +74,5 @@ section {
 .block-subtitle{
 	font-size: 35px;
 	margin: 30px 0;
+	z-index: 100;
 }
